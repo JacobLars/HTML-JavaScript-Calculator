@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>My Calculator</h1>
+    <div id="main_container">
+        <div id="result_container">
+            <div id="result-window">
+                <output id="result"></output>
+            </div>
+            <input type="button" value="C" onclick="clearResultWindow()">
+        </div>
+
+        <table id="calculator">
+            
+            <div>
+                <tr>
+                    <td><input type="button" value="1" class="calc_button" onclick="displayInput('1')"></input></td>
+                    <td><input type="button" value="2" class="calc_button" onclick="displayInput('2')"></input></td>
+                    <td><input type="button" value="3" class="calc_button" onclick="displayInput('3')"></input></td>
+                    <td><input type="button" value="+" class="calc_button" onclick="displayInput('+')"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" class="calc_button" onclick="displayInput('4')"></input></td>
+                    <td><input type="button" value="5" class="calc_button" onclick="displayInput('5')"></input></td>
+                    <td><input type="button" value="6" class="calc_button" onclick="displayInput('6')"></input></td>
+                    <td><input type="button" value="-" class="calc_button" onclick="displayInput('-')"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" class="calc_button" onclick="displayInput('7')"></input></td>
+                    <td><input type="button" value="8" class="calc_button" onclick="displayInput('8')"></input></td>
+                    <td><input type="button" value="9" class="calc_button" onclick="displayInput('9')"></input></td>
+                    <td><input type="button" value="*" class="calc_button" onclick="displayInput('*')"></input></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" class="calc_button" onclick="displayInput('0')"></input></td>
+                    <td><input type="button" value="." class="calc_button" onclick="displayInput('.')"></input></td>
+                    <td><input type="button" class="calc_button" value="=" onclick="calculate()"></input></td>
+                    <td><input type="button" class="calc_button" value="/" onclick="displayInput('/')"></input></td>
+                    
+                </tr>
+            </div>
+        </table>
+    </div>
+</body>
+
+</html>
